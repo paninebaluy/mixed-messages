@@ -10,5 +10,5 @@
         "positive" : [ "crazy", "playful", "silly", "excited", "joyful", "friendly", "calm", "happy" ],
         "negative" : [ "grumpy", "pissed off", "crazy", "annoyed", "angry" ],
     },
-    "verbs" : [  ],
+    "verbs" : [  ]
 }

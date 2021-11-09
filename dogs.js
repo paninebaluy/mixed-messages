@@ -10,15 +10,16 @@ const dogs = {
         positive : [ "crazy", "playful", "silly", "excited", "joyful", "friendly", "calm", "happy" ],
         negative : [ "grumpy", "pissed off", "crazy", "annoyed", "angry", "arrogant" ]
     },
+    actions: [ "drops a ball", "shakes off spit", "wags its tail", "sniffs your toes", "sits in front of you", "loops after its tail" ],
     verbs : {
         positive : [ "comments", "whispers",  "barks", "chitters", 
             "woofs", "baroofs", "mumbles", "arfs" ],
         negative : ["snarls", "snaps", "spats", "squeaks", "snorts", "remarks", "whines",
             "howls" ]
     },
-    messages : ["You're going to be okay.", "Please stop talking to dogs, this is worrying"],
+    messages : ["You're going to be okay.", "Please stop talking to dogs, this is worrying.", 
+    "Your pockets smell nice today! Any cheese?", "I smell a good breakfast on you, do you have any of it left to share?", 
+    "Human, listen closely: I need you to throw this ball and not do anything else today.", "You smell like my favorite human." ],
 }
 
 module.exports = dogs;
-
-console.log(dogs.moods.positive[3]);

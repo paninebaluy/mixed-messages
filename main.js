@@ -1,13 +1,16 @@
 // import dogs from './dogs'; // ES6
 const dogs = require('./dogs'); // ES5
 
-const mood = dogs.moods.positive[3];
-const breed = dogs.breeds[9];
-const verb = dogs.verbs.positive[5];
-const message = dogs.messages[1];
+const getRandomArrElement = (arr) => arr[Math.floor(Math.random() * arr.length)];
+
+const mood = getRandomArrElement(dogs.moods.negative);
+const breed = getRandomArrElement(dogs.breeds);
+const action = getRandomArrElement(dogs.actions);
+const verb = getRandomArrElement(dogs.verbs.negative);
+const message = getRandomArrElement(dogs.messages);
 
 const getMessage  = () => {
-    return `A ${mood} ${breed} bounds to you and ${verb}: "${message}"`;
+    return `A ${mood} ${breed} ${action} and ${verb}: "${message}"`;
 }
 
 console.log(getMessage());

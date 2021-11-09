@@ -8,7 +8,12 @@
         "saluki", "husky", "english bulldog", "whippet", "very good girl", "yorkie" ],
     "moods" : {
         "positive" : [ "crazy", "playful", "silly", "excited", "joyful", "friendly", "calm", "happy" ],
-        "negative" : [ "grumpy", "pissed off", "crazy", "annoyed", "angry" ],
+        "negative" : [ "grumpy", "pissed off", "crazy", "annoyed", "angry", "arrogant" ]
     },
-    "verbs" : [  ]
+    "verbs" : {
+        "positive" : [ "comments", "remarks", "whispers",  "barks", "howls", "chitters", 
+            "woofs", "baroofs", "mumbles", "arfs" ],
+        "negative" : ["snarls", "snaps", "spats", "squeaks", "snorts", "whines" ]
+    },
+    "" : []
 }

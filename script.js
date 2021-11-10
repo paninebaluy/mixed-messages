@@ -99,5 +99,8 @@ largeDogBtn.addEventListener('touchend', getLargeSpeech);
 resetBtn.addEventListener('click', resetBoxes);
 resetBtn.addEventListener('touchend', resetBoxes);
 imgArray.forEach(img, () => {
-    img.addEventListener('touchstart', (evt) => evt.closest('.card'.style.transform = "translate(20px, 20px) scale(1.1)"));
+    img.addEventListener('touchstart', (evt) => {
+        evt.preventDefault();
+        evt.closest('.card'.style.transform = "translate(20px, 20px) scale(1.1)");
+    });
 });

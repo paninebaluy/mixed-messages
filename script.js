@@ -88,6 +88,4 @@ largeDogBtn.addEventListener('click', () => {
     switchBoxes();
     responseText.textContent = getMessage('large');
 });
-resetBtn.addEventListener('click', () => {
-    resetBoxes();
-})
+resetBtn.addEventListener('click', resetBoxes);

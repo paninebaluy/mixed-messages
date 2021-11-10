@@ -80,6 +80,8 @@ smolDogBtn.addEventListener('click', () => {
     switchBoxes();
     responseText.textContent = getMessage('smol');
 });
+smolDogBtn.addEventListener('touchstart', (evt) => evt.closest('.card'.style.transform = "translate(20px, 20px) scale(1.1)"));
+
 mediumDogBtn.addEventListener('click', () => {
     switchBoxes();
     responseText.textContent = getMessage('medium');

@@ -40,6 +40,7 @@ const dogResponseBox = document.querySelector('.response');
 const footer = document.querySelector('.footer');
 const responseText = document.querySelector('.response__text');
 const header = document.querySelector('.header');
+const imgArray = document.querySelectorAll('card__img');
 
 // functions
 const switchBoxes = () => {
@@ -80,7 +81,9 @@ smolDogBtn.addEventListener('click', () => {
     switchBoxes();
     responseText.textContent = getMessage('smol');
 });
-smolDogBtn.addEventListener('touchstart', (evt) => evt.closest('.card'.style.transform = "translate(20px, 20px) scale(1.1)"));
+imgArray.forEach(img, () => {
+    img.addEventListener('touchstart', (evt) => evt.closest('.card'.style.transform = "translate(20px, 20px) scale(1.1)"));
+});
 
 mediumDogBtn.addEventListener('click', () => {
     switchBoxes();

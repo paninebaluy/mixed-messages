@@ -5,9 +5,9 @@
     <meta lang="en-us">
     <title>Talk to a Dog</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="script.js"></script>
+    <script src="./script.js" defer></script>
 </head>
-<body>
+<body class="content">
     <main class="main">
         <div class="wrapper">
             <p>You walk along a path and see a dog park.</p>
@@ -20,20 +20,28 @@
                 <h2>Smol</h2>
                 <img class="card__img" src="./images/chihuahua.jpg">
             </section>
+
             <section class="card" id="medium">
                 <h2>Medium</h2>
                 <img class="card__img" src="./images/med.jpg">
             </section>
+
             <section class="card" id="large">
                 <h2>Large doggo</h2>
                 <img class="card__img" src="./images/labrador.jpg">
             </section>
         </div>
-        
+
+        <div class="response">
+            <section class="card">
+                <img class="card__img" src="./images/labrador.jpg">
+            </section>
+            <p class="response__text">Human, listen closely: I need you to throw this ball and not do anything else today.</p>
+        </div>
     </main>
     <footer class="footer">
         <nav>
-            <p>&copy; <a href="https://github.com/paninebaluy/mixed-messages">paninebaluy</a></p>
+            <p>&copy; <a href="https://github.com/paninebaluy/mixed-messages" target="_blank">paninebaluy</a></p>
         </nav>
     </footer>
 </body>

@@ -1,12 +1,31 @@
 @import url(./vendor/normalize.css);
 @import url(./vendor/fonts.css);
 
+/* The typing effect */
+@keyframes opacity {
+    from {
+      opacity: 0;
+    } to {
+      opacity: 1;
+    }
+  }
+
 * {
     margin: 0;
     padding: 0;
     font-family: "Noto Sans Mono", sans-serif;
     font-weight: 200;
+    color: #000;
     border: solid red 1px;
+    background-color: #fefefe;
+}
+
+.content {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 500px;
+    margin: 80px auto;
+    width: 50%;
 }
 
 .header {
@@ -15,26 +34,46 @@
 }
 
 .main {
-    margin: 50px auto;
-    width: 50%;  
+    margin: 2% auto;
+    width: 100%;  
 }
 
 .footer {
-    height: 100px;
-    width: 50%;
+    flex-shrink: 0;
+    height: 50px;
+    width: 100%;
     text-align: left;
     margin: 0 auto;
 }
 
 .selector {
     display: flex;
+    opacity: 1;
+    min-height: 300px;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    animation: opacity .8s steps(100) alternate;
+}
+
+.response {
+    display: none;
+    opacity: 0;
+    min-height: 300px;
+    flex-flow: row wrap;
+    justify-content: left;
+    animation: opacity 1s steps(100) alternate;
+}
+
+.response__text {
+    width: 70%;
+    margin-top: 30px;
+    overflow: hidden;
 }
 
 .card {
     width: 20%;
-    margin: 30px auto;
+    margin: 30px 30px;
+    height: 200px;
 }
 
 .card__img {

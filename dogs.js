@@ -1,4 +1,6 @@
-const dogs = {
+'use strict';
+
+export const dogs = {
     breeds : {
         smol : [ "little good boy", "mutt", "very smol good girl", "bichon frise", "boston terrier", "chihuahua", 
         "dachshund", "jack russell terrier", "norwich terrier", "pug", "fox terrier", "yorkie", "maltese", 
@@ -27,4 +29,4 @@ const dogs = {
     "Human, listen closely: I need you to throw this ball and not do anything else today.", "You smell like my favorite human." ],
 }
 
-module.exports = dogs;
+// module.exports = dogs;

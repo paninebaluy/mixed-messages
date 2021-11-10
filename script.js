@@ -75,22 +75,29 @@ const getMessage = (size) => {
 
 // event handlers
 
-
-
-smolDogBtn.addEventListener('click', () => {
+const getSmolSpeech = () => {
     switchBoxes();
     responseText.textContent = getMessage('smol');
-});
+}
+
+const getMediumSpeech = () => {
+    switchBoxes();
+    responseText.textContent = getMessage('medium');
+}
+
+const getLargeSpeech = () => {
+    switchBoxes();
+    responseText.textContent = getMessage('large');
+}
+
+smolDogBtn.addEventListener('click', getSmolSpeech);
+smolDogBtn.addEventListener('touchend', getSmolSpeech);
+mediumDogBtn.addEventListener('click', getMediumSpeech);
+mediumDogBtn.addEventListener('touchend', getMediumSpeech);
+largeDogBtn.addEventListener('click', getLargeSpeech);
+largeDogBtn.addEventListener('touchend', getLargeSpeech);
+resetBtn.addEventListener('click', resetBoxes);
+resetBtn.addEventListener('touchend', resetBoxes);
 imgArray.forEach(img, () => {
     img.addEventListener('touchstart', (evt) => evt.closest('.card'.style.transform = "translate(20px, 20px) scale(1.1)"));
 });
-
-mediumDogBtn.addEventListener('click', () => {
-    switchBoxes();
-    responseText.textContent = getMessage('medium');
-});
-largeDogBtn.addEventListener('click', () => {
-    switchBoxes();
-    responseText.textContent = getMessage('large');
-});
-resetBtn.addEventListener('click', resetBoxes);

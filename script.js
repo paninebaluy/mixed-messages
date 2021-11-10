@@ -15,10 +15,11 @@ const dogs = {
         "labrador", "bullmastiff" ]
     },
     moods : {
-        positive : [ "crazy", "playful", "silly", "excited", "joyful", "friendly", "calm", "happy" ],
-        negative : [ "grumpy", "pissed off", "crazy", "annoyed", "angry", "arrogant" ]
+        positive : [ "beaming", "playful", "silly", "excited", "joyful", "friendly", "calm", "happy" ],
+        negative : [ "grumpy", "sad-eyed", "crazy-looking", "annoyed", "angry", "arrogant" ]
     },
-    actions: [ "drops a ball", "shakes off spit", "wags its tail", "sniffs your toes", "sits in front of you", "loops after its tail" ],
+    actions: [ "drops a ball", "shakes off its spit", "wags its tail", "sniffs your toes", "sits in front of you", 
+    "loops after its tail", "licks your hand", "plops on the ground", "prods your knee with its nose" ],
     verbs : {
         positive : [ "comments", "whispers",  "barks", "chitters", 
             "woofs", "baroofs", "mumbles", "arfs" ],
@@ -27,7 +28,8 @@ const dogs = {
     },
     messages : ["You're going to be okay.", "Please stop talking to dogs, this is worrying.", 
     "Your pockets smell nice today! Any cheese?", "I smell a good breakfast on you, do you have any of it left to share?", 
-    "Human, listen closely: I need you to throw this ball and not do anything else today.", "You smell like my favorite human." ],
+    "Human, listen closely: I need you to throw this ball and not do anything else today.", "You smell like my favorite human.",
+    "Hey, get that frown off your face and let's go play!", "Is it okay if I lick your face for a while? You look like you need it." ],
 }
 
 // DOM elements

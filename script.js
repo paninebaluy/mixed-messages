@@ -1,5 +1,9 @@
-// import dogs from './dogs'; // ES6
-const dogs = require('./dogs'); // ES5
+import dogs from './dogs'; // ES6
+// const dogs = require('./dogs'); // ES5
+
+const smolDogBtn = document.getElementById('smol');
+const mediumDogBtn = document.getElementById('medium');
+const largeDogBtn = document.getElementById('large');
 
 const getRandomArrElement = (arr) => arr[Math.floor(Math.random() * arr.length)];
 

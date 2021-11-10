@@ -1,11 +1,16 @@
 const dogs = {
-    breeds : [ "akita", "alaskan malamute", "americal bulldog", "bit bull terrier", 
-        "australian shepherd", "basenji", "basset hound", "welsh corgi", "beagle", 
-        "bichon frise", "border collie", "boston terrier", "boxer", "bullmastiff", 
-        "chihuahua", "collie", "dachshund", "doberman", "irish setter", "french bulldog", 
-        "fox terrier", "german shepherd", "gordon setter", "greyhound", "jack russell terrier", 
-        "labrador", "mutt", "norwich terrier", "corgi", "pug", "very good boy", "poodle", "samoyed", 
-        "saluki", "husky", "english bulldog", "whippet", "very good girl", "yorkie" ],
+    breeds : {
+        smol : [ "little good boy", "mutt", "very smol good girl", "bichon frise", "boston terrier", "chihuahua", 
+        "dachshund", "jack russell terrier", "norwich terrier", "pug", "fox terrier", "yorkie", "maltese", 
+        "pekingese", "mini bullterier", "white westie", "tiny puppy" ],
+        medium: [ "very good boy", "mutt", "very good girl", "american bulldog", "pit bull", 
+        "australian shepherd", "basenji", "welsh corgi", "beagle", "border collie", "boxer", "collie", 
+        "poodle", "samoyed", "saluki", "husky", "english bulldog", "whippet", "doberman", "french bulldog", 
+        "greyhound" ],
+        large : [ "akita", "alaskan malamute", "newfounland", "irish setter", 
+        "german shepherd", "very good boy", "mutt", "very good girl", "basset hound", "gordon setter", 
+        "labrador", "bullmastiff" ]
+    },
     moods : {
         positive : [ "crazy", "playful", "silly", "excited", "joyful", "friendly", "calm", "happy" ],
         negative : [ "grumpy", "pissed off", "crazy", "annoyed", "angry", "arrogant" ]

@@ -1,0 +1,15 @@
+/* font from the Google Fonts library
+    link to source: https://fonts.google.com/noto/specimen/Noto+Sans+Mono
+*/
+
+@font-face {
+    font-family: 'Noto Sans Mono';
+    font-style:  normal;
+    font-weight: 200;
+    src: url('./fonts/NotoSansMono-ExtraLight.eot');
+    src: url('./fonts/NotoSansMono-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/NotoSansMono-ExtraLight.woff2') format('woff2'),
+        url('./fonts/NotoSansMono-ExtraLight.woff') format('woff'),
+        url('./fonts/NotoSansMono-ExtraLight.ttf') format('ttf');
+  }
+  

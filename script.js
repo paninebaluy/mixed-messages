@@ -34,6 +34,7 @@ const dogs = {
 const smolDogBtn = document.getElementById('smol');
 const mediumDogBtn = document.getElementById('medium');
 const largeDogBtn = document.getElementById('large');
+const resetBtn = document.getElementById('return');
 const sizeSelector = document.querySelector('.selector');
 const dogResponseBox = document.querySelector('.response');
 const footer = document.querySelector('.footer');
@@ -46,7 +47,15 @@ const switchBoxes = () => {
     sizeSelector.style.display = 'none';
     sizeSelector.style.opacity = 0;
     dogResponseBox.style.display = 'flex';
-    dogResponseBox.style.opacity = 1;
+    dogResponseBox.style.opacity = 1; 
+}
+
+const resetBoxes = () => {
+    dogResponseBox.style.display = 'none';
+    dogResponseBox.style.opacity = 0; 
+    header.style.opacity = 1;
+    sizeSelector.style.display = 'flex';
+    sizeSelector.style.opacity = 1;
 }
 
 const getRandomArrElement = (arr) => arr[Math.floor(Math.random() * arr.length)];
@@ -65,6 +74,8 @@ const getMessage = (size) => {
 
 // event handlers
 
+
+
 smolDogBtn.addEventListener('click', () => {
     switchBoxes();
     responseText.textContent = getMessage('smol');
@@ -72,8 +83,11 @@ smolDogBtn.addEventListener('click', () => {
 mediumDogBtn.addEventListener('click', () => {
     switchBoxes();
     responseText.textContent = getMessage('medium');
-})
+});
 largeDogBtn.addEventListener('click', () => {
     switchBoxes();
     responseText.textContent = getMessage('large');
+});
+resetBtn.addEventListener('click', () => {
+    resetBoxes();
 })

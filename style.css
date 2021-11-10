@@ -15,6 +15,7 @@
     padding: 0;
     font-family: "Noto Sans Mono", sans-serif;
     font-weight: 200;
+    font-size: 1em;
     color: #000;
     background-color: #fefefe;
 }
@@ -22,8 +23,8 @@
 .content {
     display: flex;
     flex-flow: column nowrap;
-    min-height: 500px;
-    margin: 80px auto;
+    min-height: 600px;
+    margin: 50px auto;
     width: 50%;
 }
 
@@ -39,19 +40,31 @@
 
 .footer {
     flex-shrink: 0;
-    height: 50px;
+    min-height: 50px;
     width: 100%;
     text-align: left;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 .selector {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     opacity: 1;
     min-height: 300px;
-    flex-flow: row wrap;
-    justify-content: space-between;
     animation: opacity .8s steps(100) alternate;
+}
+
+@media screen and (max-width: 5750px) and (orientation: portrait) {
+    .selector {
+        flex-direction: column;
+        min-height: 650px;
+    }
+
+    .card {
+        width: 70%;
+        margin: 10px auto;
+    }
 }
 
 .response {
@@ -72,7 +85,7 @@
 .card {
     width: 25%;
     margin: 30px 10px 0 0;
-    height: 200px;
+    min-height: 200px;
     cursor: pointer;
     transform: translate(0) scale(1);
     transition: transform 0.3s ease;
@@ -81,6 +94,10 @@
 
 .card:hover {
     transform: translate(20px, 20px) scale(1.1);
+}
+
+#return:hover {
+    transform: translate(5px, 5px);
 }
 
 .card__img {
